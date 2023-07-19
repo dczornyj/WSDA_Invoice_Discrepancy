@@ -1,6 +1,5 @@
 
--- How many transactions took place between the years 2011 and 2012?
--- A: 167 transactions
+-- 1) Taking a look at all of the transactions that took place between the years 2011 and 2012.
 
 SELECT
 	InvoiceId,
@@ -16,8 +15,10 @@ WHERE
 ORDER BY
 	InvoiceDate
 
--- How much money did WSDA Music make during the same period?
---A: $1947.97
+
+
+-- 2) Obtaining the total sum in WSDA music sales during the same period (2011-2012)?
+
 
 SELECT
 	sum(total)
@@ -30,7 +31,7 @@ ORDER BY
 	InvoiceDate
 
 
--- Get a list of customers who made purchases between 2011 and 2012.
+-- 3) Obtaining a list of customers who made purchases between 2011 and 2012.
 
 
 SELECT
@@ -49,8 +50,9 @@ WHERE
 	
 ORDER BY
 	c.LastName
+
 	
--- Get a list of customers, sales reps, and total transaction amounts for each customer between 2011 and 2012.
+-- 4) Digging deeper and creating a list of customers, sales reps, and total transaction amounts for each customer between 2011 and 2012.
 
 TABLE QUERIED IN DB BROWSER
 
@@ -74,9 +76,7 @@ WHERE
 ORDER BY
 	total
 	
--- How many transactions are above the average transaction amount during the same time period?
-
--- A: 26 transactions
+-- 5) Starting to look for outliers by querying how many transactions are above the average transaction amount during the same time period?
 
 SELECT
 	CustomerId,
@@ -95,7 +95,7 @@ FROM
 WHERE	
 	InvoiceDate BETWEEN "2011-01-01 00:00:00" AND "2012-12-31 00:00:00")
 
--- Get a list of employees who exceeded the average transaction amount from sales they generated during 2011 and 2012.
+-- 6) Querying a list of employees who exceeded the average transaction amount from sales they generated during 2011 and 2012.
 
 SELECT
 	sum(i.total), 
@@ -119,7 +119,8 @@ GROUP BY
 	e.LastName
 ORDER BY e.LastName
 
--- Create a Commission Payout column that displays each employee’s commission based on 15% of the sales transaction amount. 
+	
+-- 7) Creating a Commission Payout column to display each employee’s commission based on 15% of the sales transaction amount. 
 
 SELECT
 	sum(i.total), 
@@ -142,11 +143,12 @@ GROUP BY
 	e.LastName
 ORDER BY e.LastName
 
---Which employee made the highest commission? 
+-- 8) Which employee made the highest commission? 
 
 --A: Jane Peacock made the highest commission, $199.77
 
--- List the customers that the employee identified in the last question. 
+	
+-- 9) Look into which customers the employee from the last question facilitated in the Sales process. 
 
 SELECT 
 	e.FirstName || ' ' || e.LastName as "Employee Name",
@@ -172,10 +174,7 @@ ORDER BY e.LastName
 
 
 
--- Which customer made the highest purchase? 
-
--- A:John Doeein made the highest purchase
-
+-- 10) Which customer made the highest purchase? 
 
 
 SELECT 
@@ -201,13 +200,4 @@ GROUP BY
 
 ORDER BY e.LastName
 
-
--- Look at this customer record—do you see anything suspicious? 
-
--- Yes, during the time period in question (2011-2012), John Doeein only ever made one purchase and it was for the max total as shown in the above question. Also, the only personal information that exists in our database regarding this customer is their name which is extremely suspicious.
-
-
--- Who do you conclude is our primary person of interest?
-
--- John Doeein is our primary person of interest as we cannot be sure whether this transaction is 100% trustworthy (it may be fraudulent). 
 
