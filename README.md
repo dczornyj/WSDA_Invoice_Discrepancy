@@ -1,5 +1,26 @@
 # WSDA_Invoice_Discrepancy
 
+
+## Results from Investigative Querying
+
+
+
+
+
+![Czornyjdaniel](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/698ae2bd-abbd-4d8e-8727-fe2e093c2b91)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Analysis
 
 
