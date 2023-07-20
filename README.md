@@ -1,4 +1,15 @@
 # WSDA_Invoice_Discrepancy
+- Exploratory analysis of a perceived financial discrepancy between the years of 2011 and 2012 from Upper Management pertaining to WSDA music sales. My exploratory analysis
+  includes the use of SQL Lite and DB Browser in order to investigate WSDA's database and discover what is causing the inconsistency in WSDA's financial records
+
+# Queried Results from Code (figure numbers correspond to steps in my analysis)
+
+## Figure 5
+![Screenshot (247)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/f0cbe1fe-60f7-4ee3-8e47-2b114316c0a6)
+
+![Screenshot (248)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/9ec0b65b-5c23-4ee3-a901-ac05cc794f4d)
+
+
 
 
 ## Results from Investigative Querying
