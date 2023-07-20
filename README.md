@@ -18,6 +18,11 @@
 
 ![Screenshot (248)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/9ec0b65b-5c23-4ee3-a901-ac05cc794f4d)
 
+## Figure 7
+-Querying Sales reps whose Average Transaction Amount per sale exceeded the average Transaction Amount across all WSDA sales reps between 2011-2012
+
+![Screenshot (251)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/2480c589-9bfe-453d-8faf-2f9366a40f75)
+
 
 
 
