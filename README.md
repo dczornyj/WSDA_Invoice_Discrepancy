@@ -5,6 +5,14 @@
 # Queried Results from Code (figure numbers correspond to steps in my analysis)
 
 ## Figure 5
+-Average Transaction Amount of WSDA Music Sales by Year
+
+![Screenshot (249)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/10faa285-9279-4f29-b892-ee53fb4bd0e8)
+
+
+
+## Figure 6
+-List of transactions that were greater than the average transaction amount from the outlying year of 2011
 ![Screenshot (247)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/f0cbe1fe-60f7-4ee3-8e47-2b114316c0a6)
 
 ![Screenshot (248)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/9ec0b65b-5c23-4ee3-a901-ac05cc794f4d)
