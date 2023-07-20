@@ -75,8 +75,21 @@ WHERE
 	InvoiceDate BETWEEN "2011-01-01 00:00:00" AND "2012-12-31 00:00:00"
 ORDER BY
 	total
+
+-- 5) Querying the average transaction amount by year of WSDA Sales
+
+SELECT
+	strftime('%Y',InvoiceDate) AS "Year",
+	round(avg(total),2) AS "Average Transaction Amount"
 	
--- 5) Starting to look for outliers by querying how many transactions are above the average transaction amount during the same time period?
+FROM 
+	INVOICE
+GROUP BY
+	Year
+ORDER BY
+	Year
+	
+-- 6) Starting to look for outliers by querying how many transactions are above the average transaction amount during the same time period?
 
 SELECT
 	CustomerId,
@@ -95,7 +108,7 @@ FROM
 WHERE	
 	InvoiceDate BETWEEN "2011-01-01 00:00:00" AND "2012-12-31 00:00:00")
 
--- 6) Querying a list of employees who exceeded the average transaction amount from sales they generated during 2011 and 2012.
+-- 7) Querying a list of employees who exceeded the average transaction amount from sales they generated during 2011 and 2012.
 
 SELECT
 	sum(i.total), 
@@ -120,7 +133,7 @@ GROUP BY
 ORDER BY e.LastName
 
 	
--- 7) Creating a Commission Payout column to display each employee’s commission based on 15% of the sales transaction amount. 
+-- 8) Creating a Commission Payout column to display each employee’s commission based on 15% of the sales transaction amount. 
 
 SELECT
 	sum(i.total), 
@@ -143,12 +156,12 @@ GROUP BY
 	e.LastName
 ORDER BY e.LastName
 
--- 8) Which employee made the highest commission? 
+-- 9) Which employee made the highest commission? 
 
 --A: Jane Peacock made the highest commission, $199.77
 
 	
--- 9) Look into which customers the employee from the last question facilitated in the Sales process. 
+-- 10) Look into which customers the employee from the last question facilitated in the Sales process. 
 
 SELECT 
 	e.FirstName || ' ' || e.LastName as "Employee Name",
@@ -174,7 +187,7 @@ ORDER BY e.LastName
 
 
 
--- 10) Which customer made the highest purchase? 
+-- 11) Which customer made the highest purchase? 
 
 
 SELECT 
