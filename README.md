@@ -54,32 +54,8 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-## Results from Investigative Querying
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Analysis
 
+-From Upper Management's initial prognosis of a financial discrepancy sometime between 2011-2012, figure 5 verifies this by showing that during 2011 the average Transaction amount of songs purchased by customers was an outlier amongst the rest of the years (average transaction amount of $15.71). In observing this, I then queried the average transaction amounts per sale based on WSDA Sales rep but only displaying average transaction amounts that were greater than the average transaction amount between 2011-2012 (figure 7). From this information, I saw that the transactions Jane Peacock facilitated were a massive outlier within these constraints that I had applied. By digging deeper into the invoice record attached to Jane Peacock, I found out that John Doeein's maximum invoice of $100.86 was particularly alarming. This record required further investigation. 
 
--- 11)  Look at this customer record—do you see anything suspicious? 
-
--- Yes, during the time period in question (2011-2012), John Doeein only ever made one purchase and it was for the max total as shown in the above question. Also, the only personal information that exists in our database regarding this customer is their name which is extremely suspicious.
-
-
--- 12)  Who do you conclude is our primary person of interest?
-
--- John Doeein is our primary person of interest as we cannot be sure whether this transaction is 100% trustworthy (it may be fraudulent). 
+After looking into John Doeein's transaction history within WSDA'S database, I observed that John had only ever made one purchase during the years of concern. By looking at this customer's record I was suspicious in finding out that WSDA knows nothing about this customer except for their name, as seen in Figure 12. From this exploratory analysis, it is clear that John Doeein is WSDA's person of interest in regard to the company's concern about a financial discrepancy between 20122-2012. Due to the lack of information documented about this customer in addition to financial transaction details tied to the customer being a huge outlier within the dataset, one cannot trust this transaction with 100% validity. There is a large possibility that the transaction made under the customer name "John Doeein" is fraudulent and thus requires further investigation in order to increase company security and prevent discrepancies like this from occurring in the future. 
