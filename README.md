@@ -21,7 +21,8 @@
 
 ![Screenshot (247)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/f0cbe1fe-60f7-4ee3-8e47-2b114316c0a6)
 
-![Screenshot (248)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/9ec0b65b-5c23-4ee3-a901-ac05cc794f4d
+![Screenshot (248)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/0ac3b823-8c9f-43cf-bf67-c5e5bfa54a1f)
+
 
 
 
