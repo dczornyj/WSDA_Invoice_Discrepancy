@@ -213,4 +213,14 @@ GROUP BY
 
 ORDER BY e.LastName
 
+-- 12) Querying the Customer Record for the customer that made the highest purchase
+
+SELECT 
+	*
+FROM 
+	Customer AS c
+WHERE
+	c.LastName = "Doeein"
+
+
 
