@@ -20,6 +20,7 @@
 -List of transactions that were greater than the average transaction amount from the outlying year of 2011
 
 ![Screenshot (247)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/f0cbe1fe-60f7-4ee3-8e47-2b114316c0a6)
+
 ![Screenshot (248)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/9ec0b65b-5c23-4ee3-a901-ac05cc794f4d
 
 
@@ -38,6 +39,7 @@
 
 
 ![Screenshot (252)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/724bb678-086d-4d4f-81c6-7f1b5e2fbdda)
+
 ![Screenshot (253)](https://github.com/dczornyj/WSDA_Invoice_Discrepancy/assets/101612220/98c3805b-ebfe-4181-8a98-088a69b3e32d)
 
 ## Figure 12
